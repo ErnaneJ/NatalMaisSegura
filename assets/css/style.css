@@ -4,12 +4,24 @@
     box-sizing: border-box;
     font-family: sans-serif;
     scroll-behavior: smooth;
+    
+}
+html, body{
+    height: 100%;  /*grande segredo do parallax*/
+    
 }
 
+/* containers */
+.container2{
+    width:100%;
+    
+}
 .container{
     width:100%;
     max-width: 1110px;
 }
+/* fim dos containers */
+
 .topbar{
     background-color:#1e1e1e;
     display:flex;
@@ -40,12 +52,13 @@ nav ul li{
     padding:10px;
 }
 nav ul li a{
-    font-size:20px;
+    font-size:17px;
     color:white;
     text-decoration: none;
 }
 nav ul li a:hover{
     color:#2B96F9;
+    text-decoration: none;
 }
 
 main{
@@ -56,19 +69,17 @@ main{
 }
 /*banner*/
 .banner{
-    height:calc(100vh - 15px);
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    background-color:#1e1e1e;
-}
-.banner .img{
     background-image: url(../images/logo.jpeg);
-    background-repeat:no-repeat;
-    background-size:cover;
-    background-position:center;
-    height:750px;
 }
+.banner{
+    position: relative;
+    background-attachment: fixed; /*deixa a imagem fixa*/
+    background-position: center; /*posição*/
+    background-size: cover; /*size deve ser tamanho e cover cobre 100% da tela*/
+    background-repeat: no-repeat; /*repetiçao*/
+    height: 100%;
+}
+
 
 /*itens*/
 .item{
@@ -109,6 +120,8 @@ main{
 .item.p .grid .text{
     color:white;
 }
+
+/* Rodapé */
 
 footer{
     height:50px;
