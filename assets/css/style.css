@@ -260,11 +260,13 @@ nav #toggle{
     display:flex;
     align-items:center;
     justify-content:start;
+    
 }
 #about .content .text p{
     display:block;
     width:70%;
     margin-bottom: 100px;
+    align-items:justify;
 }
 #about .content .text span{
     display:block;
@@ -347,6 +349,15 @@ nav #toggle{
     height:75px;
     width: 75px;
     margin-bottom: 20px;
+    border-radius: 50%;
+    border: 2px solid var(--blackBlue)
+}
+#developers .content .employees .card p{
+    text-align:center;
+}
+#developers .content .employees .card a{
+    text-decoration: none;
+    list-style: none;
 }
 #developers .content .employees .card .icons{
     margin: 0px 10px 0px 10px;
