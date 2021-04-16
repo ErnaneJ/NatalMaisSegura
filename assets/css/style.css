@@ -613,4 +613,7 @@ footer hr, footer p{
         width: 100%;
         margin-top:25px;
     }
+    #developers .content .employees .card .icons{
+        opacity: 1;
+    }
 }
