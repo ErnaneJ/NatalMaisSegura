@@ -231,6 +231,9 @@ nav #toggle{
     -moz-box-shadow: 4px 4px 18px -5px rgba(26, 35, 126, 0.72);
     box-shadow: 4px 4px 18px -5px rgba(26, 35, 126, 0.72);
 }
+#contacts .content .contentItens .contentCards .card .title{
+    text-align: center;
+}
 #contacts .content .contentItens .card:hover{
     transform:translateY(-10px);
 }
