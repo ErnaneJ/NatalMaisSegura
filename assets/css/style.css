@@ -305,10 +305,34 @@ nav #toggle{
     font-weight:400;
     margin-bottom: 100px;
 }
-/*
-#developers .content .slider{
-    COLOCA O CSS DO SLIDE AQUI LUCAS
-}*/
+/* SLIDE */
+.carousel-control-next, .carousel-control-prev{
+    /* deixa os controles mais prox a parede  */
+    width: 3%;
+}
+.ajuste-text{
+    margin: 0 200px;
+}
+.image{
+    margin: 0 240px;
+    margin-bottom: 30px;
+}
+.propostaText a{
+    color:var(--ligthGreen);
+    display:inline-block;
+    padding:10px 20px;
+    border:2px solid var(--ligthGreen);
+    text-decoration: none;
+    margin-top:20px;
+}
+.propostaText a:hover{
+    color:white;
+    background-color:var(--ligthGreen);
+}
+/* provavelmente não vai ficar responsivo */
+    
+    
+
 
 /*Funcionarios*/
 #developers{
@@ -571,6 +595,14 @@ footer hr, footer p{
     .bannerText h1{
         font-size:15px;
     } 
+    /* propostas */
+    .ajuste-text{
+        margin: 0 40px;
+    }
+    .image{
+        margin: 0 40px;
+        margin-bottom: 30px;
+    }
     /*about*/
     #about .content .text{
         text-align:justify;
