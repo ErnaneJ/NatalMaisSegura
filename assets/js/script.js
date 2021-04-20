@@ -79,12 +79,16 @@ $(function(){
     document.querySelector('.modal_background').classList.toggle('modalOn');
     $("html,body").css({"overflow":"auto"});
   }
+
+  function tell(){
+    document.querySelector('.modalTell').classList.toggle('modalOn');
+  }
   
   function modal(e){
     document.querySelector('.modal_background').classList.toggle('modalOn');
     $("html,body").css({"overflow":"hidden"});
     $("#modal").css({"overflow":"auto"});
-    document.querySelector('.modal_background .modal .titleMODAL').innerHTML= `
+    document.querySelector('.modal_background .modalS .titleMODAL').innerHTML= `
     <img width=150px src="${$(`#${e} img`).attr('src')}" alt="">
     <h2>${document.querySelector(`#${e} .title`).innerHTML}</h2>
     <p>preencha corretamente os campos abaixo.</p>

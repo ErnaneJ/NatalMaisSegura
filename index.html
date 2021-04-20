@@ -47,11 +47,6 @@
         <!-- CARROSEL -->
         <div id="carousel-controles" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
-                <ol class="carousel-indicators">
-                    <li class="mt-4 active ajuste-indicador" data-target="#carousel-controles" data-slide-to="0"></li>
-                    <li class="mt-4 ajuste-indicador" data-target="#carousel-controles" data-slide-to="1"></li>
-                    <li class="mt-4 ajuste-indicador" data-target="#carousel-controles" data-slide-to="2"></li>
-                </ol>
 
                 <!-- INNER (ONDE COLOCA O CONTEUDO) -->
                 <div class="carousel-item active">
@@ -114,7 +109,11 @@
             </a>
             -->
 
-
+            <ol class="carousel-indicators">
+                <li class="mt-4 active ajuste-indicador" data-target="#carousel-controles" data-slide-to="0"></li>
+                <li class="mt-4 ajuste-indicador" data-target="#carousel-controles" data-slide-to="1"></li>
+                <li class="mt-4 ajuste-indicador" data-target="#carousel-controles" data-slide-to="2"></li>
+            </ol>
         </div>
         <!-- CARROSEL -->
 
@@ -157,8 +156,7 @@
                             <img src="./assets/images/pm.png" alt="">
                             <b class="title">Policia Militar</b>
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sed felis id elit
-                                faucibus venenatis. In sit amet tincidunt elit.
+                                Buscas e solicitações de patrulhamento, orientação a populacioonal, contensão de distúrbios civis, realizar ações de busca à criminosos e recuperação de bens, atendimento de ocorrências como acidentes de trânsitos, brigas, assaltos e outras perturbações.
                             </p>
                         </div>
                         <div id="card5" onclick="modal(this.id);"class="card">
@@ -169,19 +167,10 @@
                                 urgência e emergência.
                             </p>
                         </div>
-                        <div id="card6" class="card">
-                            <img  src="./assets/images/PoliciaCivil.png" alt="">
-                            <b class="title">Telefones de emergências</b>
-                            <p>
-                                <!-- https://memoria.ebc.com.br/cidadania/2013/09/telefones-uteis-e-de-emergencia-do-brasil#emergencia -->
-                                <ul>
-                                    <li>190: Ocorrencias policiais, mediações de conflitos, etc.</li>
-                                    <hr>
-                                    <li>193: Primeiros socorros</li>
-                                    <hr>
-                                    <li>199: Ocorrencias de defesa civíl; deslizamentos, alagamentos, etc</li>
-                                </ul>
-                            </p>
+                        <div id="card6" onclick="tell();" class="card">
+                            <img  src="./assets/images/tel.png" alt="">
+                            <b class="title">Telefones emergênciais</b>
+                            
                         </div>
                     </div>
                 </div>
@@ -328,9 +317,6 @@
                             
                             <i class="fas fa-angle-right fa-3x text-dark"></i>
                         </a>
-                       
-            
-            
                     </div>
                 </div>
             </div>
@@ -353,8 +339,7 @@
                     <div class="card">
                         <img src="./assets/images/ernane.jpg" alt="">
                         <h4>Ernane Ferreira</h4>
-                        <p>CEO - Engenheiro de Computação</p>
-                        <p>Atua no desenvolvimento front-end</p><br>
+                        <p>CEO <br> Engenheiro de Computação<br>Atua no desenvolvimento front-end.</p><br>
                         <div class="links">
                             <a target="_blank" class="link" href="https://github.com/ErnaneJ">
                                 <i class="icons" data-feather="github"></i>
@@ -371,8 +356,7 @@
                     <div class="card">
                         <img src="./assets/images/lucas.jpeg" alt="">
                         <h4>Lucas Gabriel</h4>
-                        <p>SÓCIO - Engenheiro da Computação</p>
-                        <p>Atua desenvolvimento de banco de dados.</p><br>
+                        <p>SÓCIO <br> Engenheiro da Computação<br>Atua desenvolvimento de banco de dados.</p><br>
                         <div class="links">
                             <a target="_blank" class="link" href="https://github.com/lucasgf007">
                                 <i class="icons" data-feather="github"></i>
@@ -389,8 +373,7 @@
                     <div class="card">
                         <img src="./assets/images/romesli.png" alt="">
                         <h4>Romisly Domingos</h4>
-                        <p>SÓCIO - Engenheiro da Computação</p>
-                        <p>Atua no desenvolvimento Back-end.</p><br>
+                        <p>SÓCIO <br> Engenheiro da Computação<br>Atua no desenvolvimento Back-end.</p><br>
                         <div class="links">
                             <a target="_blank" class="link" href="https://github.com/Romisly">
                                 <i class="icons" data-feather="github"></i>
@@ -422,7 +405,7 @@
         </div>
     </footer>
     <section class="modal_background">
-        <div id="modal" class="modal">
+        <div id="modal" class="modalS">
             <div class="titleMODAL">
                 <img width=150px src="assets/images/samu.png" alt="">
                 <h2>Serviço de Atendimento Móvel de Urgência</h2>
@@ -477,6 +460,36 @@
             </form>
             <input class="btn" onclick="alert('dados enviados com sucesso!');modaloff();" type="submit" value="Confirmar">
             <p class="btn" onclick="modaloff();">Fechar</p>
+        </div>
+    </section>
+    <section class="modalTell">
+        <div class="modalS">
+                <div class="titleMODAL">
+                    <img width=150px src="./assets/images/tel.png" alt="">
+                    <h2>Contatos de Emergência Padrão nacional</h2>
+                    <p>Entre em contato com alguns dos números abaixo dependendo da necessidade.</p>
+                </div>
+                <ul>
+                    <div>
+                        <li><a href="tel:193">Corpo de Bombeiros - 193</a></li>
+                        <li><a href="tel:191">Polícia Rodoviária Federal - 191</a></li>
+                        <li><a href="tel:190">Policia Militar - 190</a></li>
+                        <li><a href="tel:198">Polícia Rodoviária Estadual - 198</a></li>
+                        <li><a href="tel:199">Defesa Civíl - 199</a></li>
+                        <li><a href="tel:192">Serviço de Atendimento Móvel de Urgência - SAMU (pronto-socorro)  - 192</a></li>
+                        <li><a href="tel:151">Procon- 151</a></li>
+                    </div>
+                    <div>
+                        <li><a href="tel:180">Central de Atendimento à Mulher no Brasil - 180</a></li>
+                        <li><a href="tel:0800-725-7282">Correios - Nacional - 0800-725-7282</a></li>
+                        <li><a href="tel:0800-725-0100">Correios (sugestões, elogios e reclamações) - 0800-725-0100</a></li>
+                        <li><a href="tel:100">Direitos Humanos - 100</a></li>
+                        <li><a href="tel:129">Disque-Defensorias Públicas - 129</a></li>
+                        <li><a href="tel:146">Receita Federal (Receita Fone) - 146</a></li>
+                        <li><a href="tel:127">Ouvidoria do Ministério Público - 127</a></li>
+                    </div>
+                </ul>
+                <p class="btn" onclick="tell();">Fechar</p>
         </div>
     </section>
     <script src="https://unpkg.com/feather-icons"></script>
